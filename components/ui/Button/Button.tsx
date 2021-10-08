@@ -1,11 +1,11 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 
 export type ButtonProps = {
-  primary : boolean,
-  boxShadow: boolean,
-  icon: any,
-  className: string,
-  children: (ReactElement<any> | string)[];
+  primary?: boolean,
+  boxShadow?: boolean,
+  icon?: any,
+  className?: string,
+  children?: any
 };
 
 

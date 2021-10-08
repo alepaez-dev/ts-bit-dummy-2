@@ -15,6 +15,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/ui/Ancord"
     },
+    "button": {
+        "scope": "intercath.prueba",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "components/ui/Button"
+    },
     "checkbox": {
         "scope": "",
         "version": "0.0.1",
