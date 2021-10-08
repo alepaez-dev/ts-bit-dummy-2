@@ -26,7 +26,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "shohamgilad.tailwind-test"
+    "defaultScope": "intercath.prueba"
   },
   /**
    * main configuration for component dependency resolution.
