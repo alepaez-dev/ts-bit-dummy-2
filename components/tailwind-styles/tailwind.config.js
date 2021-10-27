@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       inset: {
         76: '0.76rem',
+        15: '3.75rem',
+        20: '5rem',
+        '2%': '2%',
+        '3%': '3%',
+        '9%': '9%',
       },
       top: {
         76: '0.76rem',
@@ -26,6 +31,9 @@ module.exports = {
       },
       minWidth: {
         64: '64px',
+        '300px': '300px',
+        '60vh': '60vh',
+        '100vh': '100vh',
       },
       maxWidth: {
         32: '32px',
@@ -33,16 +41,25 @@ module.exports = {
         64: '64px',
         94: '94px',
         136: '136px',
+        '300px': '300px',
+        700: '700px',
+        1024: '1024px',
+        '13rem': '13rem',
+        '40%': '40%',
+        '48%': '48%',
       },
       minHeight: {
+        34: '43px',
         64: '64px',
         94: '94px',
         136: '136px',
+        700: '700px',
       },
       maxHeight: {
         24: '24px',
         32: '32px',
         64: '64px',
+        '300px': '300px',
         94: '94px',
         136: '136px',
       },
@@ -82,5 +99,6 @@ module.exports = {
   },
   variants: {
     extend: {},
-  }
+  },
+  plugins: [require('@tailwindcss/forms')],
 };

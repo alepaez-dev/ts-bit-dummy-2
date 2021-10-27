@@ -11,49 +11,49 @@
 {
     "ancord": {
         "scope": "intercath.prueba",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/Ancord"
     },
     "button": {
         "scope": "intercath.prueba",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/Button"
     },
     "checkbox": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/checkbox"
     },
     "envs/tailwind-react": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/envs/tailwind-bit"
     },
     "intercath-checkbox": {
         "scope": "intercath.prueba",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/intercath-checkbox"
     },
     "styles/tailwind-styles": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/tailwind-styles"
     },
     "ui/button": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/button/components/tailwind-button"
     },
     "ui/themed-component": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/themed-component"
     },

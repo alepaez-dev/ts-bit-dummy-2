@@ -2,10 +2,11 @@ importers:
   .:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@tailwindcss/forms': registry.npmjs.org/@tailwindcss/forms/0.3.4_tailwindcss@2.1.2
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
       '@teambit/webpack.modules.style-regexps': registry.npmjs.org/@teambit/webpack.modules.style-regexps/0.0.31
       autoprefixer: registry.npmjs.org/autoprefixer/10.2.5_postcss@8.2.13
-      core-js: registry.npmjs.org/core-js/3.18.2
+      core-js: registry.npmjs.org/core-js/3.19.0
       postcss: registry.npmjs.org/postcss/8.2.13
       postcss-loader: registry.npmjs.org/postcss-loader/5.2.0_postcss@8.2.13
       react: registry.npmjs.org/react/17.0.2
@@ -15,21 +16,22 @@ importers:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@17.0.2+react@17.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.24
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/17.0.27
-      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.9
+      '@types/react': registry.npmjs.org/@types/react/17.0.33
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.10
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
     specifiers:
       '@babel/runtime': 7.12.18
+      '@tailwindcss/forms': ^0.3.4
       '@teambit/harmony': 0.2.11
       '@teambit/webpack.modules.style-regexps': 0.0.31
       '@testing-library/react': 11.2.6
       '@types/jest': ^26.0.24
       '@types/node': 12.20.4
-      '@types/react': ^17.0.27
-      '@types/react-dom': ^17.0.9
+      '@types/react': ^17.0.33
+      '@types/react-dom': ^17.0.10
       '@types/testing-library__jest-dom': 5.9.5
       autoprefixer: 10.2.5
-      core-js: ^3.18.2
+      core-js: ^3.19.0
       postcss: 8.2.13
       postcss-loader: 5.2.0
       react: 17.0.2
@@ -43,7 +45,15 @@ importers:
     specifiers: {}
   components/tailwind-styles:
     specifiers: {}
+  components/ui/Ancord:
+    specifiers: {}
+  components/ui/Button:
+    specifiers: {}
   components/ui/button/components/tailwind-button:
+    specifiers: {}
+  components/ui/checkbox:
+    specifiers: {}
+  components/ui/intercath-checkbox:
     specifiers: {}
   components/ui/themed-component:
     specifiers: {}
@@ -122,8 +132,8 @@ packages:
       '@types/istanbul-lib-coverage': registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3
       '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.1
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/yargs': registry.npmjs.org/@types/yargs/15.0.13
-      chalk: registry.npmjs.org/chalk/4.1.1
+      '@types/yargs': registry.npmjs.org/@types/yargs/15.0.14
+      chalk: registry.npmjs.org/chalk/4.1.2
     dev: true
     engines:
       node: '>= 10.14.2'
@@ -169,6 +179,20 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.6.tgz
     version: 1.2.6
+  registry.npmjs.org/@tailwindcss/forms/0.3.4_tailwindcss@2.1.2:
+    dependencies:
+      mini-svg-data-uri: registry.npmjs.org/mini-svg-data-uri/1.4.3
+      tailwindcss: registry.npmjs.org/tailwindcss/2.1.2_941a81a5c9afb5d3c8bce0db60f786b1
+    dev: false
+    id: registry.npmjs.org/@tailwindcss/forms/0.3.4
+    name: '@tailwindcss/forms'
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    resolution:
+      integrity: sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.4.tgz
+    version: 0.3.4
   registry.npmjs.org/@teambit/harmony/0.2.11:
     dependencies:
       cleargraph: registry.npmjs.org/cleargraph/5.8.0
@@ -317,17 +341,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz
     version: 15.7.4
-  registry.npmjs.org/@types/react-dom/17.0.9:
+  registry.npmjs.org/@types/react-dom/17.0.10:
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.27
+      '@types/react': registry.npmjs.org/@types/react/17.0.33
     dev: true
     name: '@types/react-dom'
     resolution:
-      integrity: sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
+      integrity: sha512-8oz3NAUId2z/zQdFI09IMhQPNgIbiP8Lslhv39DIDamr846/0spjZK0vnrMak0iB8EKb9QFTTIdg2Wj2zH5a3g==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.9.tgz
-    version: 17.0.9
-  registry.npmjs.org/@types/react/17.0.27:
+      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.10.tgz
+    version: 17.0.10
+  registry.npmjs.org/@types/react/17.0.33:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.4
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.2
@@ -335,10 +359,10 @@ packages:
     dev: true
     name: '@types/react'
     resolution:
-      integrity: sha512-zgiJwtsggVGtr53MndV7jfiUESTqrbxOcBvwfe6KS/9bzaVPCTDieTWnFNecVNx6EAaapg5xsLLWFfHHR437AA==
+      integrity: sha512-pLWntxXpDPaU+RTAuSGWGSEL2FRTNyRQOjSWDke/rxRg14ncsZvx8AKWMWZqvc1UOaJIAoObdZhAWvRaHFi5rw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.27.tgz
-    version: 17.0.27
+      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.33.tgz
+    version: 17.0.33
   registry.npmjs.org/@types/scheduler/0.16.2:
     dev: true
     name: '@types/scheduler'
@@ -357,24 +381,24 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.5.tgz
     version: 5.9.5
-  registry.npmjs.org/@types/yargs-parser/20.2.0:
+  registry.npmjs.org/@types/yargs-parser/20.2.1:
     dev: true
     name: '@types/yargs-parser'
     resolution:
-      integrity: sha512-37RSHht+gzzgYeobbG+KWryeAW8J33Nhr69cjTqSYymXVZEN9NbRYWoYlRtDhHKPVT1FyNKwaTPC1NynKZpzRA==
+      integrity: sha512-7tFImggNeNBVMsn0vLrpn1H1uPrUBdnARPTpZoitY37ZrdJREzf7I16tMrlK3hen349gr1NYh8CmZQa7CTG6Aw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-20.2.0.tgz
-    version: 20.2.0
-  registry.npmjs.org/@types/yargs/15.0.13:
+      tarball: https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-20.2.1.tgz
+    version: 20.2.1
+  registry.npmjs.org/@types/yargs/15.0.14:
     dependencies:
-      '@types/yargs-parser': registry.npmjs.org/@types/yargs-parser/20.2.0
+      '@types/yargs-parser': registry.npmjs.org/@types/yargs-parser/20.2.1
     dev: true
     name: '@types/yargs'
     resolution:
-      integrity: sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ==
+      integrity: sha512-yEJzHoxf6SyQGhBhIYGXQDSCkJjB6HohDShto7m8vaKg9Yp0Yn8+71J9eakh2bnPg6BfsH9PRMhiRTZnd4eXGQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/yargs/-/yargs-15.0.13.tgz
-    version: 15.0.13
+      tarball: https://registry.npmjs.org/@types/yargs/-/yargs-15.0.14.tgz
+    version: 15.0.14
   registry.npmjs.org/acorn-node/1.8.2:
     dependencies:
       acorn: registry.npmjs.org/acorn/7.4.1
@@ -408,16 +432,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/acorn/-/acorn-7.4.1.tgz
     version: 7.4.1
-  registry.npmjs.org/ansi-regex/5.0.0:
+  registry.npmjs.org/ansi-regex/5.0.1:
     dev: true
     engines:
       node: '>=8'
     name: ansi-regex
     resolution:
-      integrity: sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
+      integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.0.tgz
-    version: 5.0.0
+      tarball: https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz
+    version: 5.0.1
   registry.npmjs.org/ansi-styles/3.2.1:
     dependencies:
       color-convert: registry.npmjs.org/color-convert/1.9.3
@@ -629,6 +653,19 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz
     version: 4.1.1
+  registry.npmjs.org/chalk/4.1.2:
+    dependencies:
+      ansi-styles: registry.npmjs.org/ansi-styles/4.3.0
+      supports-color: registry.npmjs.org/supports-color/7.2.0
+    dev: true
+    engines:
+      node: '>=10'
+    name: chalk
+    resolution:
+      integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz
+    version: 4.1.2
   registry.npmjs.org/chokidar/3.5.1:
     dependencies:
       anymatch: registry.npmjs.org/anymatch/3.1.2
@@ -766,15 +803,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.2.tgz
     version: 3.11.2
-  registry.npmjs.org/core-js/3.18.2:
+  registry.npmjs.org/core-js/3.19.0:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-zNhPOUoSgoizoSQFdX1MeZO16ORRb9FFQLts8gSYbZU5FcgXhp24iMWMxnOQo5uIaIG7/6FA/IqJPwev1o9ZXQ==
+      integrity: sha512-L1TpFRWXZ76vH1yLM+z6KssLZrP8Z6GxxW4auoCj+XiViOzNPJCAuTIkn03BGdFe6Z5clX5t64wRIRypsZQrUg==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.18.2.tgz
-    version: 3.18.2
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.19.0.tgz
+    version: 3.19.0
   registry.npmjs.org/core-util-is/1.0.3:
     dev: false
     name: core-util-is
@@ -1310,7 +1347,7 @@ packages:
     version: 7.0.0
   registry.npmjs.org/jest-diff/26.6.2:
     dependencies:
-      chalk: registry.npmjs.org/chalk/4.1.1
+      chalk: registry.npmjs.org/chalk/4.1.2
       diff-sequences: registry.npmjs.org/diff-sequences/26.6.2
       jest-get-type: registry.npmjs.org/jest-get-type/26.3.0
       pretty-format: registry.npmjs.org/pretty-format/26.6.2
@@ -1480,6 +1517,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/micromatch/-/micromatch-4.0.4.tgz
     version: 4.0.4
+  registry.npmjs.org/mini-svg-data-uri/1.4.3:
+    dev: false
+    hasBin: true
+    name: mini-svg-data-uri
+    resolution:
+      integrity: sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz
+    version: 1.4.3
   registry.npmjs.org/minimatch/3.0.4:
     dependencies:
       brace-expansion: registry.npmjs.org/brace-expansion/1.1.11
@@ -1798,7 +1844,7 @@ packages:
   registry.npmjs.org/pretty-format/26.6.2:
     dependencies:
       '@jest/types': registry.npmjs.org/@jest/types/26.6.2
-      ansi-regex: registry.npmjs.org/ansi-regex/5.0.0
+      ansi-regex: registry.npmjs.org/ansi-regex/5.0.1
       ansi-styles: registry.npmjs.org/ansi-styles/4.3.0
       react-is: registry.npmjs.org/react-is/17.0.2
     dev: true

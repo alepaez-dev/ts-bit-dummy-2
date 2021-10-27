@@ -9,6 +9,15 @@ const userIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text
 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
 </svg>;
 
+const userIconReverse = <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary ml-2 mb-1" viewBox="0 0 20 20" fill="currentColor">
+<path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+</svg>;
+
+
+const plusIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white ml-2 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+</svg>;
+
 const googleIcon = <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0)">
   <path
@@ -38,17 +47,25 @@ const googleIcon = <svg width="20" height="20" viewBox="0 0 20 20" fill="none" x
 
 // Composition
 export const Primary = () => (
-  <Button primary={true}>Ingresar</Button>
+  <Button className="rounded-md" primary={true}>Ingresar</Button>
 );
 
 export const Secondary = () => (
-  <Button className="bg-white text-black-400 border">Cancelar</Button>
+  <Button className="bg-white text-black-400 border rounded-md">Cancelar</Button>
 );
 
 export const WithIcon = () => (
-  <Button className="border">{googleIcon}</Button>
+  <Button className="border rounded-md">{googleIcon}</Button>
 );
 
 export const WithLeftIcon = () => (
-  <Button icon={userIcon} className="border text-primary font-medium">Children</Button>
+  <Button icon={userIcon} className="border text-primary font-medium rounded-md">Children</Button>
+);
+
+export const PaymentIcon = () => (
+  <Button primary={true} icon={plusIcon} className="border text-white font-medium rounded-md">Agregar metodo de pago</Button>
+);
+
+export const ReverseIcon = () => (
+  <Button reverseIcon={true} icon={userIconReverse} className="border text-primary font-medium rounded-md">Reverse Icon</Button>
 );
