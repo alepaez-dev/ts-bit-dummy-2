@@ -3,3 +3,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .customPlaceholder::placeholder {
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35px;
+  }
+
+  .customDropdownMenu:hover svg,
+  .customDropdownMenu:hover p {
+    color: white;
+  }
+
+  .customDropdownMenu:focus-within,
+  .customDropdownMenu:active,
+  .customDropdownMenu:focus-within svg {
+    font-weight: bold;
+    background-color: #5d75f9;
+    color: white;
+  }
+
+  .optionCustom {
+    font-weight: bold;
+    color: white;
+    background-color: #5d75f9;
+  }
+  .optionCustom svg {
+    color: white;
+  }
+}

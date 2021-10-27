@@ -11,61 +11,79 @@
 {
     "ancord": {
         "scope": "intercath.prueba",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/ui/Ancord"
     },
     "button": {
         "scope": "intercath.prueba",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/ui/Button"
     },
     "checkbox": {
         "scope": "",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/ui/checkbox"
     },
+    "dropdown-menu-profile": {
+        "scope": "intercath.prueba",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "components/ui/DropdownMenuProfile"
+    },
     "envs/tailwind-react": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "components/envs/tailwind-bit"
     },
     "form-select": {
         "scope": "intercath.prueba",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/ui/FormSelect"
     },
     "intercath-checkbox": {
         "scope": "intercath.prueba",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/ui/intercath-checkbox"
     },
-    "select": {
+    "profile-picture": {
         "scope": "intercath.prueba",
         "version": "0.0.2",
         "mainFile": "index.ts",
+        "rootDir": "components/ui/ProfilePicture"
+    },
+    "select": {
+        "scope": "intercath.prueba",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
         "rootDir": "components/ui/Select"
+    },
+    "set-up-session": {
+        "scope": "intercath.prueba",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "components/ui/SetUpSession"
     },
     "styles/tailwind-styles": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/tailwind-styles"
     },
     "ui/button": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "components/ui/button/components/tailwind-button"
     },
     "ui/themed-component": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "components/ui/themed-component"
     },
